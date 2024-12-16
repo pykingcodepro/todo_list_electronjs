@@ -41,4 +41,17 @@ module.exports = {
       [FuseV1Options.OnlyLoadAppFromAsar]: true,
     }),
   ],
+  publishers: [
+    {
+      name: '@electron-forge/publisher-github',
+      config: {
+        repository: {
+          owner: 'pykingcodepro',
+          name: 'todo_list_electronjs'
+        },
+        prerelease: false,
+        draft: true
+      }
+    }
+  ],
 };
